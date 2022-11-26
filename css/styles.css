@@ -1,0 +1,330 @@
+/* =============== Global style ================= */
+
+/* ===================================================  */
+/* =============== Mobile size 375px ================= */
+/* ===================================================  */
+body {
+  /* height: 100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  flex-direction: column; */
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  margin: 1rem;
+}
+
+/* ============ layout =========== */
+.container-fuild {
+  /* display: flex; */
+  /* background-color: rgb(0, 240, 168); */
+  /* margin-left: 100px; */
+}
+
+.square {
+  background-color: rgb(247, 0, 255);
+  /* padding: 1px; */
+  border-radius: 2%;
+  overflow: hidden;
+  margin: 20px;
+  display: grid;
+  /* max-width: 600px; */
+  /* overflow-wrap: break-word; */
+  /* display: grid;
+  grid: 4rem;
+  padding: 10px; */
+}
+
+.details {
+  background-color: rgba(165, 42, 42, 0.425);
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  /* padding-bottom: 0.05rem; */
+  /* padd */
+}
+
+.price {
+  /* background-color: #d19c9c86; */
+  font-family: "Fraunces", serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* margin: 10px; */
+  /* justify-content: center; */
+}
+
+/* =========== components =========== */
+/* button */
+.button_container {
+  /* margin-top: 10px; */
+  /* background-color: aquamarine; */
+}
+
+.my-button {
+  /* background-color: black; */
+  cursor: pointer;
+  /* margin: 10px 0 20px;
+  padding: 3% 26%; */
+  /* padding: 8% 49%; */
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-button:hover {
+  background-color: #1a4031;
+}
+
+button img {
+  width: 15px;
+  height: 16px;
+  margin-top: 7px;
+}
+/* .my-button[data-icon="image-icon"] {
+  content: " ";
+  width: 15px;
+  height: 16px;
+  background-color: rgb(46, 31, 31);
+} */
+
+/* button {
+  margin-bottom: 6%;
+  width: 20.6875rem;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button:hover {
+  background-color: #1a4031;
+} */
+
+/* button img {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  margin-right: 3px;
+} */
+
+/* perfume image*/
+/* img {
+  display: block;
+  max-height: 100%;
+  height: 278px;
+} */
+
+/* width: 355px; */
+/* price*/
+.large_price_size {
+  font-size: 35px;
+  color: hsl(158, 36%, 37%);
+  margin-bottom: 0;
+}
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+
+/* ========== Typography ===========*/
+h4,
+h1,
+p {
+  /* padding-left: 10px; */
+}
+
+.strikethrough_text {
+  text-decoration: line-through;
+  /* color: rgba(0, 0, 0, 0.089); */
+  padding-left: 1.5625rem;
+  padding-top: 1.0625rem;
+  font-weight: normal;
+}
+
+h1,
+.large_price_size,
+.strikethrough {
+  font-family: "Fraunces", serif;
+}
+
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-size: 32px;
+}
+
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: normal;
+  padding-top: 1.375rem;
+  /* padding-top: 0.8125rem; */
+  font-size: 14px;
+  line-height: 1;
+  /* background-color: #2e2834; */
+}
+
+h4,
+p {
+  color: hsl(228, 12%, 48%);
+}
+p {
+  font-size: 15px;
+}
+
+/* ===================================================  */
+/* =============== Desktop size  ===================== */
+/* ===================================================  */
+
+/* ============ layout =========== */
+
+@media (min-width: 600px) {
+  .square {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 100px; */
+    background-color: rgb(60, 21, 97);
+  }
+
+  .details {
+    background-color: black;
+    margin-right: 100%;
+  }
+}
+
+/* body {
+  background-color: hsl(30, 38%, 92%);
+}
+.container-fuild {
+  width: 50%;
+  margin: 5% auto 0;
+  font-family: "Montserrat", sans-serif;
+} */
+/* This is for controling the default margin of square  */
+/* .square { */
+/* background-color: rgba(255, 127, 80, 0.342); */
+/* margin: 0;
+} */
+
+/* This is for image */
+/* .product-image {
+  width: 100%;
+  background-color: cornflowerblue;
+  overflow: hidden;
+  padding: 0;
+  border-bottom-left-radius: 2%;
+  border-top-left-radius: 2%;
+
+  display: inline-block;
+  width: 50%;
+  /* max-width: 100%; 
+/} */
+/* This is for details */
+/* .details {
+  background-color: #ffffff;
+  padding-top: 25px;
+  border-top-right-radius: 2%; */
+/* border-bottom-right-radius: 20%; */
+/* } */
+/* ============ image =========== */
+/* .product-image img { */
+/* max-width: 100%; */
+/* border-left-color: 10%; */
+/* border-top-left-radius: 20%; */
+/* border-top-left-radius: 50%; */
+/* border-top-left-radius: 150%; */
+/*display: block; */
+/* background-image: url(../images/image-product-mobile.jpg); */
+/* max-height: 100%; */
+/* width: 50vh; */
+/* object-fit: cover; */
+/* width: 312px; */
+/* width: 70vh; */
+/* margin-left: 0; */
+/* height: 73vh; */
+/* } */
+
+/* .desktop_image {
+  max-width: 100%;
+} */
+
+/* .mobile_image {
+  display: none;
+} */
+/* ========== Typography ===========*/
+/* h1 {
+  font-family: "Fraunces", serif;
+  margin: 25px 0;
+}
+
+h4,
+p {
+  color: hsl(228, 12%, 48%);
+}
+.large_price_size,
+.strikethrough_text {
+  color: black;
+}
+.price {
+  font-family: "Fraunces", serif;
+  display: inline;
+}
+
+.large_price_size {
+  float: left;
+  font-size: 35px;
+  padding-right: 14px;
+  /* padding-left: 10px; } */
+
+/* .strikethrough_text { */
+/* float: right; */
+/* color: hsl(212, 21%, 14%); */
+/* color: hsl(0, 0%, 100%); */
+/* padding-top: 14px; */
+/* background-color: burlywood; */
+/* text-decoration: line-through; */
+/* display: block; */
+/* } */
+/* p {
+  font-size: 14px;
+} */
+
+/* ==== components==== */
+/* button */
+
+/* .button_container { */
+/* background-color: black; */
+/* text-align: center;
+  margin-top: 5%;
+  margin-bottom: 10px;
+} */
+
+/* .cart-button {
+  padding: 9px 80px;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+}
+
+.cart-button:hover {
+  background-color: #1a4031;
+} */
+
+/* @media (max-width: 990px) {
+  .desktop_image {
+    display: none;
+  }
+  .mobile_image {
+    background-image: url("../images/image-product-mobile.jpg");
+  }
+
+  body {
+    background-color: #1a4031;
+  }
+} */

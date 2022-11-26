@@ -1,0 +1,117 @@
+/* ===================================================  */
+/* =============== Mobile size 375px ================= */
+/* ===================================================  */
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100%;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  margin: 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+/* image section */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* layout section */
+.square {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 7px;
+  overflow: hidden;
+  display: grid;
+  max-width: 600px; /* this make product card to stay in center*/
+}
+.product-details {
+  padding: 19px;
+  display: grid;
+  color: hsl(228, 12%, 48%);
+}
+
+.price {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+/* font section */
+h4 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 29px;
+  color: hsl(212, 21%, 14%);
+}
+
+p {
+  font-size: 15px;
+}
+/* price section */
+.current_price {
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.original-price-strikethrough {
+  text-decoration: line-through;
+}
+
+/* button section */
+.my-button {
+  cursor: pointer;
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  /* font-size: 0.99rem; */
+  border: 0;
+  padding: 0.75em 1.5em;
+  display: inline-flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 0.944rem;
+  margin-bottom: 10px;
+  border-radius: 0.5rem;
+}
+
+.my-button:hover {
+  background-color: #1a4031;
+}
+
+h1,
+.current_price {
+  font-family: "Fraunces", serif;
+}
+/* footer section */
+footer {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a {
+  color: hsl(300, 100%, 30%);
+}
+/* /////////////// Desktop size /////////// */
+
+@media (min-width: 600px) {
+  .square {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-button {
+    padding: 1.5px;
+  }
+
+  h4 {
+    padding-top: 15px;
+    letter-spacing: 5px;
+    font-size: 12px;
+  }
+}
