@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Github](hhttps://hakizimana-clement.github.io/product-preview-card-component/)
+- Live Site URL: [Github](https://hakizimana-clement.github.io/product-preview-card-component/)
 
 ## My process
 
